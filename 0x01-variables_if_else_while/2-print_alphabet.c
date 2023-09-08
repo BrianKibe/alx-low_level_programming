@@ -1,17 +1,17 @@
 #include <stdio.h>
 /**
- * main - printing, to stdout, alphabet
- * in lowercase
- * @void - blanks
- * Return: Always 0
+ *main - prints the alphabet in lowercase
+ *void - blanks
+ *Return: always 0
  */
 int main(void)
 {
-	char str[] = "abcdefghijklmnopqrstuvwxyz";
-	for (int i = 0; i <= 27; i++)
+	char alphabet;
+
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-		putchar(str[i];
+		putchar(alphabet);
 	}
-	putchar('\n');
-	return (0);
+		putchar('\n');
+		return (0);
 }
