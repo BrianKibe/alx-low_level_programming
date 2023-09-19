@@ -1,16 +1,20 @@
 #include "main.h"
 /**
- * _puts - prints string to stdout
- * @str: pointer to string to print
+ * _strlen - prints string to stdout
+ * @s: pointer to string to print
+ * Return: null
  */
 
-void _puts(char *str)
+int _strlen(char *s)
 {
 	int i;
 
-	for (i = 0; str[i] != '\0'; i++)
+	i = 0;
+
+	while (s[i] != '\0')
 	{
-		_putchar(str[i]);
+		i++;
 	}
-	_putchar('\n');
+
+	return (i);
 }
