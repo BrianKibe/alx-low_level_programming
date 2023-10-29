@@ -2,6 +2,7 @@
 /**
  * int factorial(int n): factorial of a given number
  * @ n: number to pass to function
+ * return: factorial of number
  */
 
 int factorial(int n)
