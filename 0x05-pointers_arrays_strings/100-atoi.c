@@ -1,20 +1,20 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * _atoi: convert string to integer
+ * _atoi- convert string to integer
  * @s: pointer to string
  * Return: an integer value
  */
 int _atoi(char *s)
 {
 	int c = 0;
-	unsigned in = 0;
+	unsigned int in = 0;
 	int min = 1;
 	int isi = 0;
 
 	while (s[c])
 	{
-		if(s[c] == 45)
+		if (s[c] == 45)
 		{
 			min *= -1;
 		}
