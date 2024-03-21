@@ -5,7 +5,7 @@
  *
  * Return: pointer to str
  */
-char leet(char *str)
+char *leet(char *str)
 {
 	char *ptr = str;
 
@@ -14,13 +14,13 @@ char leet(char *str)
 		char ch = *ptr;
 
 		if ((ch == 'a') || (ch == 'A'))
-			*ptr == '4';
+			*ptr = '4';
 		else if ((ch == 'e') || (ch == 'E'))
 			*ptr = '3';
 		else if ((ch == 'o') || (ch == 'O'))
 			*ptr = '0';
 		else if ((ch == 't') || (ch == 'T'))
-			*pr = '7';
+			*ptr = '7';
 		else if ((ch == 'l') || (ch == 'L'))
 			*ptr = '1';
 		ptr++;
