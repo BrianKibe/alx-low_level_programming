@@ -5,25 +5,25 @@
  *
  * Return: pointer to str
  */
-char *leet(char *str)
+char *leet(char *s)
 {
-	char *ptr = str;
+	char *p = s;
 
-	while (*ptr)
+	while (*p)
 	{
-		char ch = *ptr;
+		char ch = *p;
 
 		if ((ch == 'a') || (ch == 'A'))
-			*ptr = '4';
+			*p = '4';
 		else if ((ch == 'e') || (ch == 'E'))
-			*ptr = '3';
+			*p = '3';
 		else if ((ch == 'o') || (ch == 'O'))
-			*ptr = '0';
+			*p = '0';
 		else if ((ch == 't') || (ch == 'T'))
-			*ptr = '7';
+			*p = '7';
 		else if ((ch == 'l') || (ch == 'L'))
-			*ptr = '1';
-		ptr++;
+			*p = '1';
+		p++;
 	}
-	return (str);
+	return (s);
 }
