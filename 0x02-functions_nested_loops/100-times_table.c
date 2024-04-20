@@ -1,40 +1,50 @@
 #include "main.h"
 /**
- * print_times_table - does exactly that
- * @n: character used
- * Return: nada
+ * print_times_table - prints the table for
+ * numbers
+ * @n: number to use
+ * Return: nothing, function is void
  */
 void print_times_table(int n)
 {
-	int i, result;
 	if (n > 15 || n < 0)
 	{
-		for (i = 0; i <= 3; i++)
-		{
-			result = i * n;
-			putchar(result / 10 + '0');
-			putchar(result % 10 + '0');
-		}
+		return;
 	}
 	else
 	{
-		break;
-	}
-}
+		int i = 0;
 
-/**
- * main - check the code.
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    print_times_table(3);
-    _putchar('\n');
-    print_times_table(5);
-    _putchar('\n');
-    print_times_table(98);
-    _putchar('\n');
-    print_times_table(12);
-    return (0);
+		while (i <= n)
+		{
+			int j = 0, prod;
+
+			while (j <= n)
+			{
+				prod = i * j;
+				if (j != 0)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+				if (prod >= 100)
+					_putchar(prod / 100 + '0');
+					_putchar((prod % 100) / 10 + '0');
+					_putchar((prod % 100) % 10 + '0');
+				else if (prod >= 10)
+				{
+					_putchar(prod / 10 + '0');
+					_putchar(prod % 10 + '0');
+				}
+				else
+				{
+					_putchar(prod + '0');
+				}
+
+				j++;
+			}
+			_putchar('\n');
+			i++;
+		}
+	}
 }
