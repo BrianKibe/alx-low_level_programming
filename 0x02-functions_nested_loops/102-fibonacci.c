@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
  * main - fibonacci numbers
  * comma separated
@@ -7,21 +8,20 @@
 int main(void)
 {
 	int i;
+	long int t1 = 1;
+	long int t2 = 2;
 
-	long int t1 = 0;
-	long int t2 = 1;
-	long int nexterm = t1 + t2;
+	printf("%ld", t1); /* Print the first Fibonacci number separately*/
+	printf(", %ld", t2); /* Print the second Fibonacci number separately*/
 
-	for (i = 1; i <= 50; i++)
-	{	
-		printf("%ld", nexterm);
-		if (i < 50 && i != 1)
-		{
-			printf(", ");
-		}
+	for (i = 3; i <= 50; i++)
+	{
+		long int nexterm = t1 + t2; /* Calculates the next term */
+
+		printf(", %ld", nexterm);
+
 		t1 = t2;
 		t2 = nexterm;
-		nexterm = t1 + t2;
 	}
 	printf("\n");
 	return (0);
