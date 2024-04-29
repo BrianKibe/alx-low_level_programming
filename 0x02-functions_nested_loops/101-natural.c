@@ -2,7 +2,7 @@
 /**
  * main - compute multiples of 5 and 3
  * and get their sum
- * Return: nothing
+ * Return: 0
  */
 int main(void)
 {
