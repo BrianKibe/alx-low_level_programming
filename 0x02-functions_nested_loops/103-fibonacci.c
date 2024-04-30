@@ -5,20 +5,22 @@
  */
 int main(void)
 {
+	int i;
 	long int t1 = 1;
 	long int t2 = 1;
 	long int sum = 0;
 
 	long int t3 = t1 + t2;
 
-	t1 = t2;
-	t2 = t3;
-
-	while (t3 < 4000000 || t3 % 2 == 0)
+	while (t3 <= 4000000)
 	{
-		sum += t3;
-		t3++;
-
+		if (t3 % 2 == 0)
+		{
+			sum += t3;
+		}
+		t1 = t2;
+		t2 = t3;
+		t3 = t1 + t2;
 	}
 	printf("%ld", sum);
 	printf("\n");
