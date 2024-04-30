@@ -5,7 +5,6 @@
  */
 int main(void)
 {
-	int i;
 	long int t1 = 1;
 	long int t2 = 1;
 	long int sum = 0;
