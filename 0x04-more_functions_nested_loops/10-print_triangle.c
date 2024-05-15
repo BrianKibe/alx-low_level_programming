@@ -5,15 +5,14 @@
  * Return: Always 0
  */
 void print_triangle(int size)
-{	
+{
 	int row, column;
+
 	if (size <= 0)
 	{
 		_putchar('\n');
 		return;
 	}
-	
-
 	for (row = 0; row < size; row++)
 	{
 		for (column = 0; column < size - row - 1; column++)
