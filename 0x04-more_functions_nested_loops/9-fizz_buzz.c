@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - program is the fizzbuzz
+ * main - program's the fizzbuzz
  * Return: Always 0
  */
 int main(void)
