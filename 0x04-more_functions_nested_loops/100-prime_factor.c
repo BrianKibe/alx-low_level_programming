@@ -37,7 +37,7 @@ int main(void)
 	long int largestPrime = largestPrimeFactor(n);
 
 	if (largestPrime != -1)
-		printf("Largest Prime Factor: %ld\n", largestPrime);
+		printf("%ld\n", largestPrime);
 	else
 		printf("No prime factors found.\n");
 	return (0);
