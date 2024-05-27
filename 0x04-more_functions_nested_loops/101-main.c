@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * main - check the code
- *
+ * @n: integer
  * Return: Always 0.
  */
 void print_number(int n);
